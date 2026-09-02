@@ -1,145 +1,104 @@
-# SIGNCONNECT AI
+# 🤟 SignConnect AI
 
-"Breaking Communication Barriers"
+### Breaking Communication Barriers with Indian Sign Language
 
-## Project Overview
+<p align="center">
+  <b>Empowering accessible communication through technology</b>
+</p>
 
-SIGNCONNECT AI is a polished desktop demo for Indian Sign Language (ISL) accessibility. The app accepts speech or text input, maps supported phrases to ISL video files, and plays the selected sign inside the application.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/GUI-Tkinter-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Language-Indian%20Sign%20Language-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Hackathon%20Prototype-success?style=for-the-badge">
+</p>
 
-## Problem Statement
+<p align="center">
+  <a href="#-about-the-project">About</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-how-it-works">How It Works</a> •
+  <a href="#-technology-stack">Tech Stack</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-future-roadmap">Roadmap</a>
+</p>
 
-Sign language demos often rely on placeholder animations or research prototypes. This project is built as a stable demonstration-ready ISL video player that keeps the current functionality simple while preparing for future machine learning upgrades.
+---
 
-## Features
+## 🌟 About the Project
 
-- Speech-to-text input using `sounddevice` + `SpeechRecognition`
-- Text input translation for supported ISL phrases
-- Embedded ISL video playback with play/pause/replay controls
-- Quick sign buttons for the eight demo phrases
-- Dictionary-driven ISL video mapping via `data/sign_dictionary.json`
-- Recent translation history for the last 3 signs
-- Friendly missing-video handling with source attribution
-- Professional dark teal dashboard UI
+**SignConnect AI** is an accessibility-focused desktop application designed to reduce communication barriers between **sign-language users** and people who do not use sign language.
 
-## System Architecture
+The current prototype accepts **speech or text input**, processes the phrase, identifies the corresponding entry from an ISL dictionary, and displays the relevant **Indian Sign Language (ISL) video** directly inside the application.
 
-1. Speech / Text input
-2. Text preprocessing and normalization
-3. Sign lookup in `data/sign_dictionary.json`
-4. Load corresponding ISL MP4 video from `signs/`
-5. Play video inside the Tkinter application
+Our vision is to evolve SignConnect into a complete **two-way sign-language communication platform** powered by computer vision and machine learning.
 
-## Technology Stack
+---
 
-- Python 3
-- Tkinter
-- Pillow
-- SpeechRecognition
-- sounddevice
-- numpy
-- python-vlc
+## 🎯 Problem Statement
 
-## Folder Structure
+Communication can become challenging when people use different communication methods.
 
-```
-SIGNCONNECT/
-+-- main.py
-+-- requirements.txt
-+-- README.md
-+-- data/
-�   +-- sign_dictionary.json
-+-- signs/
-+-- assets/
-+-- ml/
-    +-- README.md
-```
+For sign-language users, communicating with people who do not understand sign language may require an interpreter or alternative communication method.
 
-- `main.py`: Main desktop application and ISL video player
-- `requirements.txt`: Python dependencies
-- `README.md`: Project documentation
-- `data/sign_dictionary.json`: ISL video mappings and source URLs
-- `signs/`: Place actual ISL MP4 files here
-- `assets/`: Optional icons or resources
-- `ml/README.md`: Future machine learning architecture
+Many existing sign-language technologies are also presented as complex research systems that may not provide a simple, accessible user experience.
 
-## Installation
+### 💡 Our Challenge
 
-Open a terminal in the project folder and run:
+> **How can technology provide a simple and accessible way to convert everyday communication into understandable Indian Sign Language?**
 
-```bash
-pip install -r requirements.txt
-```
+---
 
-## VLC Requirement
+## 💡 Our Solution
 
-The application uses `python-vlc` to play videos inside the GUI. You also need VLC Media Player installed on your system.
+SignConnect provides a simple interface where users can:
 
-- Windows: Install VLC from https://www.videolan.org/
-- macOS/Linux: Install VLC from your package manager or official website
+**🎤 Speak** or **⌨️ Type** a phrase
 
-## Run the Project
+↓
 
-From the project folder, run:
+**🔤 Process the input**
 
-```bash
-python main.py
-```
+↓
 
-## Speech Input
+**📖 Search the ISL dictionary**
 
-1. Click `START LISTENING`
-2. Speak a supported phrase like `Hello` or `Thank You`
-3. Recognized text appears in the speech box
-4. Click `TRANSLATE` to load the ISL video
+↓
 
-If speech recognition fails, the app displays a clear warning and text input remains available.
+**🤟 Retrieve the corresponding ISL video**
 
-## Text Input
+↓
 
-Type a supported phrase such as `Hello`, `Yes`, `No`, `Thank You`, `Sorry`, `Help`, `Emergency`, or `Hospital`, then click `TRANSLATE`.
+**🎬 Display the sign inside the application**
 
-## ISL Video Output
+This creates a simple and interactive **Speech/Text → ISL** communication workflow.
 
-The center panel plays the corresponding ISL MP4 video inside the application. If a sign video is missing, the app displays a clear warning message and the source URL for the expected ISL resource.
+---
 
-## Quick Signs
+# ✨ Key Features
 
-The right panel contains quick sign buttons for the eight demo phrases. Clicking a quick sign immediately loads and plays the corresponding video.
+### 🎤 Speech Input
 
-## ISL Video Sources
+Convert spoken phrases into text using speech-recognition technologies.
 
-This project is grounded in legitimate ISL resources such as the ISLRTC dictionary:
+- Voice input support
+- Speech-to-text conversion
+- Error handling when recognition fails
+- Text fallback available
 
-- ISLRTC ISL Dictionary: https://islrtc.nic.in/isl-dictionary/
+---
 
-All supported phrases are mapped to ISLRTC-style video entries in `data/sign_dictionary.json`.
+### ⌨️ Text Input
 
-## Current Limitations
+Users can directly type supported phrases and translate them into corresponding ISL videos.
 
-- The app does not perform automatic sign recognition from camera input.
-- The current demo uses a dictionary mapping to ISL video files.
-- Actual ISL videos must be placed in `signs/` manually if not already available.
+Example phrases include:
 
-## Future Scope
-
-- Camera capture with MediaPipe Holistic
-- CNN-based feature extraction for hand landmarks
-- LSTM for temporal sign sequence processing
-- Transformer-based contextual ISL recognition
-- Sign-to-text recognition pipeline
-
-## How to Add a New Sign
-
-1. Place a new MP4 file in the `signs/` folder.
-2. Add the mapping to `data/sign_dictionary.json`, for example:
-
-```json
-"hello": {
-  "video": "signs/hello.mp4",
-  "language": "ISL",
-  "source": "https://islrtc.nic.in/isl-dictionary/"
-}
-```
-
-3. Restart the app.
-4. Use the new phrase in the text input or add a quick sign button.
+```text
+Hello
+Yes
+No
+Thank You
+Sorry
+Help
+Emergency
+Hospital
