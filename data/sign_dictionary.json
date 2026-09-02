@@ -1,0 +1,47 @@
+{
+    "hello": {
+        "video": "signs/hello.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘hello’ in the ISLRTC dictionary)"
+    },
+    "yes": {
+        "video": "signs/Yes.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘yes’ in the ISLRTC dictionary)"
+    },
+    "no": {
+        "video": "signs/No.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘no’ in the ISLRTC dictionary)"
+    },
+    "thank you": {
+        "video": "signs/Thank_You.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘thank you’ in the ISLRTC dictionary)"
+    },
+    "thankyou": {
+        "video": "signs/Thank_You.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘thank you’ in the ISLRTC dictionary)"
+    },
+    "sorry": {
+        "video": "signs/sorry.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘sorry’ in the ISLRTC dictionary)"
+    },
+    "help": {
+        "video": "signs/help.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘help’ in the ISLRTC dictionary)"
+    },
+    "emergency": {
+        "video": "signs/emergency.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘emergency’ in the ISLRTC dictionary)"
+    },
+    "hospital": {
+        "video": "signs/hospital.mp4",
+        "language": "ISL",
+        "source": "https://islrtc.nic.in/isl-dictionary/ (search ‘hospital’ in the ISLRTC dictionary)"
+    }
+}
