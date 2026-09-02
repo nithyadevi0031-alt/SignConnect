@@ -110,3 +110,75 @@ The current prototype follows:
                   │
                   ▼
            🤟 ISL OUTPUT
+---
+
+# ✨ KEY FEATURES
+
+SignConnect is designed with a simple, user-friendly workflow while keeping the architecture flexible for future AI and computer-vision integration.
+
+## 🎤 1. Speech Input
+
+Users can provide a phrase through their microphone.
+
+The speech input is converted into text using the speech-recognition pipeline, allowing users to interact with the application without manually typing every phrase.
+
+### Workflow
+
+```text
+🎤 User Speech
+      ↓
+🎙️ Audio Capture
+      ↓
+🧠 Speech Recognition
+      ↓
+📝 Recognized Text
+
+---
+
+# 📈 PROJECT IMPACT
+
+SignConnect is designed with the broader goal of improving accessibility through practical technology.
+
+### 🌍 Expected Impact
+
+| Area | Potential Impact |
+|---|---|
+| ♿ Accessibility | Makes ISL resources easier to access |
+| 🤝 Communication | Helps bridge basic communication gaps |
+| 🇮🇳 Indian Context | Focuses on Indian Sign Language |
+| 🏥 Healthcare | Can support basic phrase communication |
+| 🏫 Education | Can assist accessibility-focused learning |
+| 🚨 Emergency | Provides quick access to important phrases |
+| 💻 Technology | Demonstrates an expandable accessibility solution |
+
+---
+
+# 🎯 PROJECT OBJECTIVES
+
+The major objectives of SignConnect are:
+
+- 🤟 Promote awareness of Indian Sign Language.
+- ♿ Explore technology-based accessibility solutions.
+- 💬 Reduce basic communication barriers.
+- 🎤 Provide speech and text-based input.
+- 🎬 Present corresponding ISL visual output.
+- 🧩 Build an architecture that can be expanded in the future.
+- 🧠 Create a foundation for future computer-vision and machine-learning integration.
+- 🌍 Encourage inclusive technology development.
+
+---
+
+# 🔬 TECHNICAL EVOLUTION
+
+SignConnect is designed as an evolving project rather than a one-time prototype.
+
+### Current Architecture
+
+```text
+🎤 Speech / ⌨️ Text
+        ↓
+📝 Text Processing
+        ↓
+📖 Dictionary Lookup
+        ↓
+🎬 ISL Video
