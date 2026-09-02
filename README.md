@@ -1,104 +1,112 @@
-# 🤟 SignConnect AI
+# 🤟 SIGNCONNECT AI
 
-### Breaking Communication Barriers with Indian Sign Language
+<h3 align="center">
+  🌐 Breaking Communication Barriers with Technology
+</h3>
 
 <p align="center">
-  <b>Empowering accessible communication through technology</b>
+  <b>
+    An accessibility-focused Indian Sign Language communication platform
+    designed to make everyday communication simpler, more inclusive, and more connected.
+  </b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/GUI-Tkinter-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Language-Indian%20Sign%20Language-purple?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Hackathon%20Prototype-success?style=for-the-badge">
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-FF6F00?style=for-the-badge)
+![ISL](https://img.shields.io/badge/Language-Indian%20Sign%20Language-7B1FA2?style=for-the-badge)
+![VLC](https://img.shields.io/badge/Video-python--vlc-FF8800?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Hackathon%20Prototype-00C853?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Hackathon%20Prototype-blue?style=for-the-badge)
+
 </p>
 
 <p align="center">
-  <a href="#-about-the-project">About</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-how-it-works">How It Works</a> •
-  <a href="#-technology-stack">Tech Stack</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-future-roadmap">Roadmap</a>
+
+⭐ <b>Accessibility</b> •
+🤟 <b>Indian Sign Language</b> •
+🎤 <b>Speech Input</b> •
+⌨️ <b>Text Input</b> •
+🎬 <b>ISL Video Output</b>
+
 </p>
 
 ---
 
-## 🌟 About the Project
+# 🌟 INTRODUCTION
 
-**SignConnect AI** is an accessibility-focused desktop application designed to reduce communication barriers between **sign-language users** and people who do not use sign language.
+Communication is one of the most fundamental ways in which people connect, understand one another, and participate in society. However, communication can become challenging when people rely on different communication methods.
 
-The current prototype accepts **speech or text input**, processes the phrase, identifies the corresponding entry from an ISL dictionary, and displays the relevant **Indian Sign Language (ISL) video** directly inside the application.
+**SignConnect AI** was created with a simple idea:
 
-Our vision is to evolve SignConnect into a complete **two-way sign-language communication platform** powered by computer vision and machine learning.
+> ### 💙 Technology should connect people, not create another barrier.
 
----
+SignConnect is an accessibility-focused desktop application designed around **Indian Sign Language (ISL)**. The current prototype allows a user to provide a phrase through **speech or text**, processes the input, searches a structured ISL dictionary, and displays the corresponding sign-language video directly inside the application.
 
-## 🎯 Problem Statement
+Rather than presenting sign-language resources as disconnected videos or static references, SignConnect brings them together into a **single interactive communication interface**.
 
-Communication can become challenging when people use different communication methods.
-
-For sign-language users, communicating with people who do not understand sign language may require an interpreter or alternative communication method.
-
-Many existing sign-language technologies are also presented as complex research systems that may not provide a simple, accessible user experience.
-
-### 💡 Our Challenge
-
-> **How can technology provide a simple and accessible way to convert everyday communication into understandable Indian Sign Language?**
+The project is also designed with a larger vision in mind. The present dictionary-driven prototype establishes the foundation for a future intelligent system capable of incorporating **computer vision, hand-landmark detection, temporal sequence modelling, and real-time sign recognition**.
 
 ---
 
-## 💡 Our Solution
+# 🎯 THE PROBLEM
 
-SignConnect provides a simple interface where users can:
+People who communicate primarily through sign language can face difficulties when interacting with individuals who do not understand sign language.
 
-**🎤 Speak** or **⌨️ Type** a phrase
+This can affect everyday situations such as:
 
-↓
+- 🏥 Healthcare communication
+- 🏫 Educational environments
+- 🏢 Workplace interaction
+- 🚨 Emergency situations
+- 🛍️ Public services
+- 👨‍👩‍👧 Everyday conversations
 
-**🔤 Process the input**
+Although Indian Sign Language resources are available, accessing the correct sign for a particular phrase can still require searching through external resources.
 
-↓
+### ❗ The challenge
 
-**📖 Search the ISL dictionary**
+How can we create a simple technology interface that allows a person to enter a common phrase and quickly receive its corresponding **Indian Sign Language representation**?
 
-↓
+### 💡 Our answer
 
-**🤟 Retrieve the corresponding ISL video**
-
-↓
-
-**🎬 Display the sign inside the application**
-
-This creates a simple and interactive **Speech/Text → ISL** communication workflow.
-
----
-
-# ✨ Key Features
-
-### 🎤 Speech Input
-
-Convert spoken phrases into text using speech-recognition technologies.
-
-- Voice input support
-- Speech-to-text conversion
-- Error handling when recognition fails
-- Text fallback available
+**SignConnect AI.**
 
 ---
 
-### ⌨️ Text Input
+# 💡 OUR SOLUTION
 
-Users can directly type supported phrases and translate them into corresponding ISL videos.
+SignConnect provides a unified interface that connects different forms of communication with Indian Sign Language resources.
 
-Example phrases include:
+The current prototype follows:
 
 ```text
-Hello
-Yes
-No
-Thank You
-Sorry
-Help
-Emergency
-Hospital
+        🎤 SPEECH
+           │
+           │
+           ▼
+    📝 SPEECH-TO-TEXT
+           │
+           │
+           ├──────────────┐
+           │              │
+           ▼              ▼
+      🔤 TEXT INPUT   ⌨️ DIRECT TEXT
+           │              │
+           └──────┬───────┘
+                  │
+                  ▼
+          🧹 TEXT PROCESSING
+                  │
+                  ▼
+         📖 ISL DICTIONARY
+                  │
+                  ▼
+          🔎 PHRASE LOOKUP
+                  │
+                  ▼
+          🎬 VIDEO MAPPING
+                  │
+                  ▼
+           🤟 ISL OUTPUT
